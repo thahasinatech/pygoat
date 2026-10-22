@@ -17,7 +17,7 @@ idna==3.4
 oauthlib==3.2.2
 Pillow==12.1.0
 pre_commit==4.5.1
-pycparser==2.21
+pycparser==3.11
 PyJWT==2.4.0
 python3-openid==3.2.0
 pytz==2020.1
