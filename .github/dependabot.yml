@@ -1,6 +1,8 @@
 version: 2
 updates:
   - package-ecosystem: "pip"
-    directory: "/"
+    directories:
+      - "/"
+      - "/challenge/labs/*"
     schedule:
       interval: "weekly"
