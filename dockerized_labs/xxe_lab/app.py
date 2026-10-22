@@ -53,9 +53,9 @@ def xxe_parse():
     """Parse XML input - intentionally vulnerable to XXE"""
     if request.method == "POST":
         try:
-            # Create a vulnerable XML parser that allows external entities
+            # Create a hardened XML parser that blocks external entities
             parser = make_parser()
-            parser.setFeature(feature_external_ges, True)
+            parser.setFeature(feature_external_ges, False)
 
             # Parse the XML data
             doc = parseString(request.data.decode("utf-8"), parser=parser)
